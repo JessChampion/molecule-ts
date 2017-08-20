@@ -1,0 +1,42 @@
+{
+  "name": "molecule",
+  "version": "0.1.0",
+  "dependencies": {
+    "@types/jest": "^20.0.7",
+    "@types/node": "^8.0.24",
+    "@types/ramda": "^0.24.7",
+    "@types/react": "^16.0.2",
+    "@types/react-dom": "^15.5.3",
+    "@types/react-redux": "^5.0.4",
+    "ramda": "^0.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6"
+  },
+  "devDependencies": {
+    "postcss": "^6.0.9",
+    "postcss-calc": "^6.0.0",
+    "postcss-color-function": "^4.0.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.1.0",
+    "postcss-font-magician": "^2.0.0",
+    "postcss-smart-import": "^0.7.5",
+    "precss": "^2.0.0",
+    "react-scripts-ts": "2.6.0",
+    "stylelint": "^8.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "postcss": "postcss src/*.pcss src/**/*.pcss -c postcss.config.js --ext 'css' --replace",
+    "postcss:watch": "npm run postcss -- --watch",
+    "lint:es": "tslint src/",
+    "lint:pcss": "stylelint 'src/**/*.pcss'",
+    "lint": "yarn lint:es && yarn lint:pcss"
+  },
+  "browserslist": [
+    "> 1% in NZ"
+  ]
+}
